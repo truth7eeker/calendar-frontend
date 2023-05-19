@@ -24,7 +24,9 @@ module.exports = {
       }),
       isDevelopment && new webpack.HotModuleReplacementPlugin(),
       isDevelopment && new ReactRefreshWebpackPlugin(),
-      new Dotenv(),
+      new Dotenv({
+         systemvars: true,
+      }),
    ],
    resolve: {
       modules: [__dirname, 'src', 'node_modules'],
