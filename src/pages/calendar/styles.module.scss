@@ -1,0 +1,16 @@
+
+.wrapper {
+    margin: 3em 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap: 1em;
+}
+
+.wrapper__withoutSlots {
+    grid-template-columns: 1fr .1fr 1fr;
+}
+
+.wrapper__withSlots {
+    grid-template-columns: 1fr .1fr 1fr .6fr;
+}

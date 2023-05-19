@@ -1,0 +1,24 @@
+  @import url('../../../../shared/consts/vars.scss');
+  
+  .calendar__day {
+      color: grey;
+
+  }
+
+  .calendar__day__active {
+      background-color: var(--secondary-bg-color);
+      border-radius: 50%;
+      color: var(--main-font-color);
+      font-weight: 700;
+
+      &:hover {
+          cursor: pointer;
+          background-color: var(--main-hover-color);
+      }
+  }
+
+  .calendar__day__selected {
+      background-color: #aeb8fe;
+      color: white;
+      border-radius: 50%;
+  }

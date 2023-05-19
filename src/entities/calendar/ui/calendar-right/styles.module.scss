@@ -1,0 +1,30 @@
+@import url('../../../../shared/consts/vars.scss');
+
+
+.calendar {
+    margin-top: 2em;
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1em;
+        div{
+            cursor: pointer;
+        }
+    }
+}
+
+.calendar__grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: .8em;
+    min-height: 213px;
+    div {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        padding: 10px 2px;
+        border-radius: 50%;
+    }
+  
+}
+

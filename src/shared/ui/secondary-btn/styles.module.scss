@@ -1,0 +1,11 @@
+  @import url('../../consts/vars.scss');
+
+.secondary {
+  border-radius: 5px;
+  padding: 10px 15px;
+  background-color: var(--main-grey);
+  color: #fff;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,21 @@
+@import url('../../consts/vars.scss');
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.textarea textarea {
+    resize: vertical;
+    outline: none;
+    height: 4.5rem;
+    border-radius: 10px;
+    padding: 10px;
+    border: .5px solid grey;
+    
+}
+
+.textarea textarea:focus {
+    border: 2.5px solid var(--main-bg-color)
+}

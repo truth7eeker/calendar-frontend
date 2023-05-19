@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 1.5em;
+    max-width: 40%;
+    text-align: center;
+    p {
+        font-style: normal;
+        line-height: 1.5rem;
+    }
+}

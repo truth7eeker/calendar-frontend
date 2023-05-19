@@ -1,0 +1,16 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin: 1em 0 3em 0;
+  width: 65%;
+}
+
+.form label {
+    font-weight: 700;
+    font-size: .7em;
+}
+
+.form button {
+    width: 100px;
+}

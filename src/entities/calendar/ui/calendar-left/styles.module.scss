@@ -1,0 +1,13 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+
+    .intro__icons{
+        display: flex;
+        align-items: center;
+        gap: .3em;
+        color: grey;
+        font-weight:600;
+    }
+}
