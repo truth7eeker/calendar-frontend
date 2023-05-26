@@ -4,7 +4,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchDates } from '../api';
 import { store, RootState } from '../../../app/store/store';
 
-
 const daysOfWeek = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
 export function CalendarLogic() {
@@ -28,10 +27,13 @@ export function CalendarLogic() {
    const { dates } = useSelector((state: RootState) => state.dates);
    const dispatch = useDispatch<typeof store.dispatch>();
 
-
    for (let i = 1; i <= endOfMonth; i++) {
       daysOfMonth.push(i).toString();
    }
+
+   useEffect(() => {
+      dispatch(fetchDates({ month, year }));
+   }, [month, year]);
 
    const increaseMonth = () => {
       const isYearPlus = (month + 1) % 12 === 0;
@@ -55,10 +57,6 @@ export function CalendarLogic() {
       }
       setMonth((prev) => prev - 1);
    };
-
-   useEffect(() => {
-      dispatch(fetchDates({ month, year }));
-   }, [month, year]);
 
    return {
       daysOfWeek,
